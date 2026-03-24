@@ -9,7 +9,7 @@
 <!--	<meta name="_csrf_header" th:content="${_csrf.headerName}">-->
 
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
-	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
 	<!--th:href="@{/css/global.css}" : 表示让thymeleaf去static目录下找资源-->
 	<title>牛客网-首页</title>

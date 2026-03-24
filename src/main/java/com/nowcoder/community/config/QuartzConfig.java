@@ -1,6 +1,6 @@
 package com.nowcoder.community.config;
 
-import com.nowcoder.community.quartz.AlphaJob;
+//import com.nowcoder.community.quartz.AlphaJob;
 import com.nowcoder.community.quartz.PostScoreRefreshJob;
 import org.quartz.JobDataMap;
 import org.quartz.JobDetail;
@@ -12,30 +12,30 @@ import org.springframework.scheduling.quartz.SimpleTriggerFactoryBean;
 
 @Configuration
 public class QuartzConfig {
-    // 配置JobDetail
-//    @Bean
-    public JobDetailFactoryBean alphaJobDetail() {
-        JobDetailFactoryBean factoryBean = new JobDetailFactoryBean();
-        factoryBean.setJobClass(AlphaJob.class);
-        factoryBean.setBeanName("alphaJob");
-        factoryBean.setGroup("alphaJobGroup");
-        factoryBean.setDurability(true);
-        factoryBean.setRequestsRecovery(true);
-        return factoryBean;
-    }
-
-    // 配置Trigger
-//    @Bean
-    public SimpleTriggerFactoryBean alphaTrigger(JobDetail alphaJobDetail) {
-        SimpleTriggerFactoryBean factoryBean = new SimpleTriggerFactoryBean();
-        factoryBean.setJobDetail(alphaJobDetail);
-        factoryBean.setName("alphaTrigger");
-        factoryBean.setGroup("alphaTriggerGroup");
-        factoryBean.setRepeatInterval(3000);
-        factoryBean.setJobDataMap(new JobDataMap());
-        return factoryBean;
-    }
-
+//    // 配置JobDetail
+////    @Bean
+//    public JobDetailFactoryBean alphaJobDetail() {
+//        JobDetailFactoryBean factoryBean = new JobDetailFactoryBean();
+//        factoryBean.setJobClass(AlphaJob.class);
+//        factoryBean.setBeanName("alphaJob");
+//        factoryBean.setGroup("alphaJobGroup");
+//        factoryBean.setDurability(true);
+//        factoryBean.setRequestsRecovery(true);
+//        return factoryBean;
+//    }
+//
+//    // 配置Trigger
+////    @Bean
+//    public SimpleTriggerFactoryBean alphaTrigger(JobDetail alphaJobDetail) {
+//        SimpleTriggerFactoryBean factoryBean = new SimpleTriggerFactoryBean();
+//        factoryBean.setJobDetail(alphaJobDetail);
+//        factoryBean.setName("alphaTrigger");
+//        factoryBean.setGroup("alphaTriggerGroup");
+//        factoryBean.setRepeatInterval(3000);
+//        factoryBean.setJobDataMap(new JobDataMap());
+//        return factoryBean;
+//    }
+//
     // 刷新帖子分数的任务
     @Bean
     public JobDetailFactoryBean postScoreRefreshJobDetail() {
