@@ -1,5 +1,5 @@
 
-## 项目简介
+## 项目介绍
 
 本项目是一个开源的社区论坛系统，采用 Spring Boot 作为主框架，结合 MyBatis、Redis、Elasticsearch、Kafka 等主流技术，实现了用户管理、帖子发布与分页、评论与点赞、私信系统、全文搜索、消息队列处理等模块，旨在打造一个简洁、高效、易用的在线社区平台。
 
@@ -10,18 +10,18 @@ src
 ├── main
 │   ├── java
 │   │   └── com.example.forum
-│   │       ├── controller             // 控制器层
-│   │       ├── service                // 业务逻辑层
-│   │       ├── dao                    // 数据访问层
-│   │       ├── entity                 // 实体类
-│   │       ├── config                 // 配置类
-│   │       ├── util                   // 工具类
-│   │       └── event                  // 事件处理
+│   │       ├── controller 
+│   │       ├── service 
+│   │       ├── dao    
+│   │       ├── entity   
+│   │       ├── config  
+│   │       ├── util    
+│   │       └── event   
 │   └── resources
-│       ├── templates                  // 模板引擎
-│       ├── static                     // 静态资源
-│       └── application.properties     // 配置文件
-└── test                               // 单元测试
+│       ├── templates
+│       ├── static      
+│       └── application.properties   
+└── test                     
 ```
 
 ## 主要功能
@@ -61,22 +61,7 @@ src
 - 使用 Kafka 处理异步事件（评论、点赞、系统通知）
 - 使用 Quartz 实现热门帖子定时计算
 
-## 技术栈
-
-- Spring Boot
-- Spring MVC
-- MyBatis
-- MySQL
-- Redis
-- Elasticsearch
-- Kafka
-- Thymeleaf
-- Bootstrap
-- Maven
-
-## 安装部署
-
-### 环境要求
+## 项目依赖
 
 - JDK 8
 - Maven 3.9+
