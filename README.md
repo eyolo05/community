@@ -69,9 +69,3 @@ src
 - Redis 3.2+
 - Elasticsearch 6.4+
 - Kafka 2.12+
-
-## 待优化
-
-- 增加第三方登录（微信、GitHub）
-- 帖子支持图片上传
-- 前后端分离
